@@ -1,0 +1,136 @@
+apply plugin: 'com.android.application'
+apply plugin: 'AndResGuard'
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.3"
+    defaultConfig {
+        applicationId "app.bright.flashlight"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 4
+        versionName "1.0.4"
+        multiDexEnabled true
+        resConfigs "en", "fr"
+    }
+    signingConfigs {
+        release {
+            storeFile file('../flashlight.jks')
+            storePassword '123456'
+            keyAlias 'flashlight'
+            keyPassword '123456'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            zipAlignEnabled true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi'
+            universalApk false
+        }
+    }
+}
+andResGuard {
+    // mappingFile = file("./resource_mapping.txt")
+    mappingFile = null
+    // It will be invalid when you sign apk with schemaV2
+    use7zip = true
+    useSign = true
+    // it will keep the origin path of your resources when it's true
+    keepRoot = false
+    whiteList = [
+            "R.drawable.icon",
+            "R.string.com.crashlytics.*",
+            "R.string.umeng*",
+            "R.string.UM*",
+            "R.string.tb_*",
+            "R.layout.umeng*",
+            "R.layout.tb_*",
+            "R.drawable.umeng*",
+            "R.drawable.tb_*",
+            "R.anim.umeng*",
+            "R.color.umeng*",
+            "R.color.tb_*",
+            "R.style.*UM*",
+            "R.style.umeng*",
+            "R.id.umeng*",
+            "R.drawable.sina*",
+            "R.string.google_app_id",
+            "R.string.gcm_defaultSenderId",
+            "R.string.default_web_client_id",
+            "R.string.ga_trackingId",
+            "R.string.firebase_database_url",
+            "R.string.google_api_key",
+            "R.string.google_crash_reporting_api_key",
+            "R.drawable.gift_gif"
+    ]
+    compressFilePattern = [
+            "*.png",
+            "*.jpg",
+            "*.jpeg",
+            "resources.arsc"
+    ]
+    sevenzip {
+        artifact = 'com.tencent.mm:SevenZip:1.2.1'
+        //path = "/usr/local/bin/7za"
+    }
+}
+
+configurations {
+    all {
+        exclude group: 'com.solid.analytics', module: 'mta'
+        exclude group: 'com.solid.analytics', module: 'tbird'
+        exclude group: 'com.google.ads.mediation', module: 'adcolony'
+        exclude group: 'com.solid.ad', module: 'adcolony'
+        exclude group: 'com.solid.ad', module: 'inmobi'
+        exclude group: 'com.solid.ad', module: 'unity'
+        exclude group: 'com.solid.ad', module: 'applovin'
+    }
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    jcenter()
+    mavenCentral()
+    maven {
+        url 'http://172.16.10.221:8081/repository/maven-releases/'
+    }
+    maven {
+        url "https://adcolony.bintray.com/AdColony"
+    }
+}
+
+
+dependencies {
+    compile 'com.solid:analytics:1.0.26'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.google.code.gson:gson:2.6.2'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.android.support:design:24.1.1'
+
+    compile 'com.solid:resident:1.0.9'
+    compile 'com.solid:common:1.0.30'
+    compile 'com.solid:ad:1.0.43'
+    compile 'com.solid:cover:1.0.6'
+    compile 'com.probe:probe:1.0.4'
+    compile 'com.solid:solidAudience:1.0.79'
+    compile 'com.solid:gamesdk:1.0.31'
+    compile 'com.solid:newssdk:1.0.36'
+    compile 'com.eval:eval:1.0.5'
+}

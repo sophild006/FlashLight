@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Flashlight</string>
+    <string name="automactic_off">Automatically turn off</string>
+    <string name="sound">Sound</string>
+    <string name="memory_string">Open memory booster</string>
+    <string name="boost_desc">May contain  sponsored content</string>
+    <string name="charge_string">Open charge manager</string>
+    <string name="feedback">Feedback</string>
+    <string name="rate_string">Rate Us</string>
+    <string name="update_string">Update</string>
+    <string name="loading">loading...</string>
+    <string name="termsandprivacy">TERMS AND PRIVACY</string>
+    <string name="privacy"><![CDATA[Privacy & Terms]]></string>
+    <string name="feedback_desc">We will automatically retrieve information about your  device to help us  fix any problems. We  promise  not to  take any personal information, in accordance  with our privacy policy.</string>
+    <string name="submitted_thanks_for_your_feedback">Submitted! Thanks for your\nfeedback</string>
+    <string name="submitted_error">Please,check your network connection</string>
+    <string name="sendwords">words</string>
+    <string name="netfailed">get update info failed, please check your network</string>
+    <string name="your_current_version_is_up_to_date">Your current version is up-to-date!</string>
+    <string name="input_content">Please input content</string>
+    <string name="input_email">Please input e-mail</string>
+    <string name="input_correct_email">Please fill in the correct email address</string>
+    <string name="no_internet">No Internet！</string>
+    <string name="get_internet">GET INTERNET</string>
+
+    <string name="open_now">OPEN NOW</string>
+    <string name="contain_ad">Agree(May contain Sponsored content)</string>
+    <string name="agree_with">I agree with \u0020</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="by_start_app">, By Starting the app</string>
+
+    <string name="slogan"> - Simple, useful and free - </string>
+    <string name="top_news">TOP NEWS</string>
+    <string name="open_wifi_optimial">Open WiFi Optimizer</string>
+    <string name="open_wifi_quick">Open Quick View</string>
+    <string name="short_game_quick" >Create Gift Shortcut</string>
+    <string name="short_news_quick" >Create News Shortcut</string>
+
+
+</resources>

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "224519542396",
+    "firebase_url": "https://flashlight-174313.firebaseio.com",
+    "project_id": "flashlight-174313",
+    "storage_bucket": "flashlight-174313.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224519542396:android:4757b0a8f33205c8",
+        "android_client_info": {
+          "package_name": "app.bright.flashlight"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224519542396-f1ir6n6d28ev8fp66o60kskjfrj6v5lv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "224519542396-icl31ok3s4dhngdf745ua4m62g8nuc66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_T41TM-Sc3rDk7ZTQ_nNGtIpo85D-bgs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

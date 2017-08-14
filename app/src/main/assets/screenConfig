@@ -1,0 +1,49 @@
+{
+  "data": {
+    "ret": 0,
+    "configVersion": 3,
+    "lockConfig": {
+      "img_count": 70,
+      "enforce_open": false,
+      "pre_close_time_interval": 12,
+      "time_interval": 10,
+      "first_auto_enforce_time": 12,
+      "ram_proportion": 10,
+      "delay": 0,
+       "screen_show_type2": "23242324231",
+       "screen_show_type": "12324232423",
+      "function_open": true,
+      "auto_enforce_time": 24,
+      "img_url_pre": "http://ad.22mobi.com/lockCleanConfig/",
+      "daily_limit": 20,
+      "video_time_interval":30,
+      "video_daily_limit":5,
+      "delay_status":0,
+      "delay_time":40,
+      "is_have_game":true
+    },
+    "wifiConfig": {
+      "enforce_open": false,
+      "function_open": true,
+      "pre_close_time_interval": 12,
+      "auto_enforce_time": 12,
+      "time_interval": 10,
+      "display_time": 8,
+      "daily_limit": 10,
+      "first_auto_enforce_time": 5
+    },
+    "config_interval": 2,
+    "cleanConfig": {
+      "enforce_open": false,
+      "function_open": true,
+      "pre_close_time_interval": 1,
+      "auto_enforce_time": 24,
+      "display_name": true,
+      "display_time": 10,
+      "first_auto_enforce_time": 12
+    }
+  },
+  "msg": "",
+  "status": "success",
+  "version": "59403a62c6551e306e92fbcc9513e1b0"
+}

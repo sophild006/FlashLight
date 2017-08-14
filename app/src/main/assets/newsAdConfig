@@ -1,0 +1,14 @@
+{
+  "data": {
+    "ret": 0,
+    "news_list_request_ad_num": 5,
+    "news_per_page_ad_num": 4,
+    "ad_request_PR": 20,
+    "news_list_ad_interval": 4,
+    "show_quick_view_interval": 24,
+    "Rerfesh_ad_function_open": true
+  },
+  "msg": "Success",
+  "status": "success",
+  "version": "5b6afb83bab08fc4"
+}

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="app.bright.flashlight">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <permission
+        android:name="app.bright.flashlight.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="app.bright.flashlight.permission.C2D_MESSAGE" />
+    <!--short -->
+    <!-- shortcut权限 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.qihoo360.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.lge.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="net.qihoo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adwfreak.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.READ_SETTINGS" />
+    <uses-permission android:name="org.adw.launcher_donut.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher3.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.fede.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.READ_SETTINGS" />
+    <uses-permission android:name="com.sec.android.app.twlauncher.settings.WRITE_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.anddoes.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.tencent.qqlauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.launcher2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.android.mylauncher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.ebproductions.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.miui.mihome2.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.miui.mihome2.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.READ_SETTINGS" />
+    <uses-permission android:name="telecom.mdesk.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="dianxin.permission.ACCESS_LAUNCHER_DATA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="app.bright.flashlight.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activity.StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="app.bright.flashlight.activity.MainActivity"
+            android:keepScreenOn="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.InitActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="app.bright.flashlight.activity.SetActivity"
+            android:launchMode="singleTask"
+            android:keepScreenOn="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.bright.flashlight.activity.FeedActivity"
+            android:launchMode="singleTask"
+            android:keepScreenOn="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.bright.flashlight.activity.TermsActivity"
+            android:launchMode="singleTask"
+            android:keepScreenOn="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AdvanceActivity"
+            android:launchMode="singleTask"
+            android:keepScreenOn="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.NewsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.top.news.action" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

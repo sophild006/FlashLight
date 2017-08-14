@@ -1,0 +1,679 @@
+{
+    "version": "3",
+    "update_interval": 7200000,
+    "setting": {
+        "admob_native_check_web_view": true,
+        "admob_cache_expire": 3600000,
+        "facebook_cache_expire": 3600000,
+        "custom_cache_expire": 3600000,
+        "inmobi_cache_expire": 3600000,
+        "mopub_cache_expire": 3600000,
+        "clink_cache_expire": 900000
+    },
+    "placements": {
+        "main_page": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 20000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702930939747556"
+                    }
+                ]
+            ]
+        },
+		"switch_int": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+			"daily_show_limit":5,
+			"show_interval":1800000,
+			"probability":10,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702931396414177"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/5685477506"
+                    }
+                ]
+            ]
+        },
+		"torch_int": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+			"daily_show_limit":5,
+			"show_interval":1800000,
+			"probability":10,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702931719747478"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/8638943902"
+                    }
+                ]
+            ]
+        },
+        "clean": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 15000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": false,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 5000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702932443080739"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "banner",
+                        "timeout": 15000,
+                        "weight": 100,
+                        "sub_type": 1,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/2592410305"
+                    }
+                ]
+            ]
+        },
+        "news_lock": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 15000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "banner",
+                        "timeout": 15000,
+                        "weight": 100,
+                        "sub_type": 1,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/5545876701"
+                    }
+                ]
+            ]
+        },
+        "news_detail": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 15000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702934329747217"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "banner",
+                        "timeout": 15000,
+                        "weight": 100,
+                        "sub_type": 1,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/8499343105"
+                    }
+                ]
+            ]
+        },
+        "news_top": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702935206413796"
+                    }
+                ]
+            ]
+        },
+        "news_lista": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 20000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702936006413716"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "banner",
+                        "timeout": 20000,
+                        "weight": 100,
+                        "sub_type": 1,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/5406275900"
+                    }
+                ]
+            ]
+        },
+        "news_listb": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 20000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702937223080261"
+                    }
+                ]
+            ]
+        },
+        "start_page": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 15000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 5000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702938639746786"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "banner",
+                        "timeout": 10000,
+                        "weight": 100,
+                        "sub_type": 1,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/2313208703"
+                    }
+                ]
+            ]
+        },
+        "lock_picture": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 20000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702940073079976"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "banner",
+                        "timeout": 20000,
+                        "weight": 100,
+                        "sub_type": 1,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/2173607909"
+                    }
+                ]
+            ]
+        },
+        "lock_pic_int": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702940399746610"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/5127074302"
+                    }
+                ]
+            ]
+        },
+        "backup": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": true,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702940759746574"
+                    }
+                ]
+            ]
+        },
+        "gift_slots": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702941183079865"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/4847872706"
+                    }
+                ]
+            ]
+        },
+        "gift_one_tap": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702942173079766"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/1336003101"
+                    }
+                ]
+            ]
+        },
+        "gift_sign_in": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702943553079628"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/4289469505"
+                    }
+                ]
+            ]
+        },
+        "gift_reward": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "eanable": true,
+                        "platform": "admob",
+                        "type": "rewarded_video",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/4149868707"
+                    }
+                ]
+            ]
+        },
+        "wifi_optmize": {
+            "enable": true,
+            "strategy": "fall",
+            "timeout": 15000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 7000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702944053079578"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "banner",
+                        "timeout": 8000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": false,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/1056801509"
+                    }
+                ]
+            ]
+        },
+        "app_start_cover": {
+            "enable": false,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702944559746194"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/4010267909"
+                    }
+                ]
+            ]
+        },
+        "app_exit_cover": {
+            "enable": false,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702945053079478"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/3731066302"
+                    }
+                ]
+            ]
+        },
+        "home_cover": {
+            "enable": false,
+            "strategy": "fall",
+            "timeout": 30000,
+            "auto_cache": false,
+            "cache_count": 1,
+            "units": [
+                [
+                    {
+                        "enable": true,
+                        "platform": "facebook",
+                        "type": "native",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "1700181490022501_1702945559746094"
+                    }
+                ],
+                [
+                    {
+                        "enable": true,
+                        "platform": "admob",
+                        "type": "interstitial",
+                        "timeout": 30000,
+                        "weight": 100,
+                        "sub_type": 0,
+                        "auto_cache": true,
+                        "cache_count": 1,
+                        "ad_id": "ca-app-pub-9838141054654431/6684532702"
+                    }
+                ]
+            ]
+        }
+    }
+}

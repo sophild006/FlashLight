@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/rl_animal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/back_btn" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/top_news"
+                android:textColor="#fff"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_no_connected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/timecolon_img_w_12" />
+
+        <RelativeLayout
+            android:id="@+id/rl_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top" />
+    </RelativeLayout>
+</RelativeLayout>

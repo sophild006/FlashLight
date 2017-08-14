@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="@string/automactic_off"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="34dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Seconds"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_ten_secends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/choose_btn_g_50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="34dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 Seconds"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_twenty_secends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/choose_btn_g_50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="34dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Minute"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_one_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/choose_btn_g_50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="34dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 Minutes"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_three_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/choose_btn_g_50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="34dp"
+            android:gravity="center_vertical"
+            android:layout_marginRight="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 Minutes"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_five_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/choose_btn_g_50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 Minutes"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_ten_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/choose_btn_g_50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30 Minutes"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_thirty_minute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/choose_btn_g_50" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="34dp"
+            android:layout_marginRight="34dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Never"
+                android:textColor="#b2b2b2"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_never"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/choose_btn_b_50" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

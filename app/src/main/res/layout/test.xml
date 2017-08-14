@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/color_bg1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        android:weightSum="7">
+
+        <ProgressBar
+            android:id="@+id/color_white"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:progress="100"
+            android:progressDrawable="@drawable/awesome_bar_clip_left" />
+
+        <View
+            android:id="@+id/color_red"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:background="#ff0e21" />
+
+        <View
+            android:id="@+id/color_origin"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:background="#faba1e" />
+
+        <View
+            android:id="@+id/color_yellow"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:background="#eff82f" />
+
+        <View
+            android:id="@+id/color_green"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:background="#56e41e" />
+
+        <View
+            android:id="@+id/color_blue"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:background="#1f49fd" />
+
+        <ProgressBar
+            android:id="@+id/color_purple"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_weight="1"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/awesome_bar_clip_right" />
+    </LinearLayout>
+</RelativeLayout>

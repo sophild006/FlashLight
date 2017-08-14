@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/start_page_bg">
+
+
+    <TextView
+        android:id="@+id/tv_start"
+        android:layout_width="254dp"
+        android:layout_height="38dp"
+        android:layout_above="@+id/ll_agree"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_open_now_bg"
+        android:gravity="center"
+        android:text="@string/open_now"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_privacy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/checkbox_agree"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selecter_check"
+            android:button="@null"
+            android:checked="true" />
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="2dp"
+            android:text="@string/contain_ad"
+            android:textColor="@color/permission_agree"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_privacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/agree_with"
+            android:textColor="@color/permision_text"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_privacy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/permision_title"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/by_start_app"
+            android:textColor="@color/permision_text"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</RelativeLayout>
